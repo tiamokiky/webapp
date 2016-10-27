@@ -2,12 +2,13 @@
   <head>
 
     <meta charset="UTF-8"/>
+    <link rel="stylesheet" type="text/css" href="reset.css" />
     <link rel="stylesheet" type="text/css" href="style.css" />
     <title>My Web</title>
     
   </head>
-  <body>
-    <div class="app-background" style="background-image:url(./c30fecfc74a95936d9a3c4972bebc77e.png); height: 575px; width: 1280px;">
+  <body style="">
+    <div id="main" class="app-background" style="background-image:url(./c30fecfc74a95936d9a3c4972bebc77e.png); height: 575px; width: 1280px;">
        <div class="banner" style="background-color:#00FFFFFF; height: 240px; width: 1280px"></div>
        <div class="content_left" style="background-color:#0000FF00; height: 335px; width: 640px; float:left;">
 		<div class="slideshow-container_l">
@@ -134,6 +135,14 @@
 		var slideIndex_r = 0;
 		//showSlides_r(slideIndex_r);
  		showSlides_r_auto();
+
+
+        function autoResizeDiv()
+        {
+            document.getElementById('main').style.height = window.innerHeight +'px';
+        }
+        window.onresize = autoResizeDiv;
+        autoResizeDiv();
 
 	</script>
 </html>
