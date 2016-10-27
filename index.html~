@@ -10,7 +10,8 @@
     
   </head>
   <body id="mybody">
-    <div id="main" class="app-background" style="background-image:url(./c30fecfc74a95936d9a3c4972bebc77e.png); height: 575px; width: 1280px;">
+    <div id="main" class="app-background" style="background-image:url(./c30fecfc74a95936d9a3c4972bebc77e.png); background-repeat: no-repeat;
+	    background-size: 100%;">
        <div class="banner" style="background-color:#00FFFFFF; height: 240px; width: 1280px"></div>
        <div class="content_left" style="background-color:#0000FF00; height: 335px; width: 640px; float:left;">
 		<div class="slideshow-container_l">
