@@ -10,7 +10,6 @@
 	  font-size: 25px;
 	  padding: 8px 0px;
       }
-	
 	/* Slideshow container */
 	.slideshow-container_l {
 	  max-width: 500px;
