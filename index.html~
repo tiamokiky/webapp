@@ -140,13 +140,18 @@
  		showSlides_r_auto();
 
 
+	function setScreenSize(h,w){
+console.log("setScreenSize=> h:"+h+",w:"+);
+		document.getElementById('main').style.height = h +'px';
+		document.getElementById('main').style.width = w +'px';
+	}
         function autoResizeDiv()
         {
             console.log("1. document.getElementById('main').style.height=>"+document.getElementById('main').style.height);
  	    console.log("document.getElementById('mybody').style.height=>"+document.getElementById('mybody').style.height);
 	    console.log("window.innerHeight=>"+window.innerHeight);
             console.log("window.innerWidth=>"+window.innerWidth);
-            document.getElementById('main').style.height = window.innerHeight +'px';
+            //document.getElementById('main').style.height = window.innerHeight +'px';
 	    console.log("2. document.getElementById('main').style.height=>"+document.getElementById('main').style.height);
         }
         autoResizeDiv();
