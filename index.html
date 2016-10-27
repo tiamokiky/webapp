@@ -139,9 +139,11 @@
 
         function autoResizeDiv()
         {
+            console.log("1. document.getElementById('main').style.height=>"+document.getElementById('main').style.height);
+	    console.log("window.innerHeight=>"+window.innerHeight);
             document.getElementById('main').style.height = window.innerHeight +'px';
+	    console.log("2. document.getElementById('main').style.height=>"+document.getElementById('main').style.height);
         }
-        window.onresize = autoResizeDiv;
         autoResizeDiv();
 
 	</script>
