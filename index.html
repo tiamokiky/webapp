@@ -4,10 +4,11 @@
     <meta charset="UTF-8"/>
     <link rel="stylesheet" type="text/css" href="reset.css" />
     <link rel="stylesheet" type="text/css" href="style.css" />
+
     <title>My Web</title>
     
   </head>
-  <body>
+  <body id="mybody">
     <div id="main" class="app-background" style="background-image:url(./c30fecfc74a95936d9a3c4972bebc77e.png); height: 575px; width: 1280px;">
        <div class="banner" style="background-color:#00FFFFFF; height: 240px; width: 1280px"></div>
        <div class="content_left" style="background-color:#0000FF00; height: 335px; width: 640px; float:left;">
@@ -140,11 +141,21 @@
         function autoResizeDiv()
         {
             console.log("1. document.getElementById('main').style.height=>"+document.getElementById('main').style.height);
+ 	    console.log("document.getElementById('mybody').style.height=>"+document.getElementById('mybody').style.height);
 	    console.log("window.innerHeight=>"+window.innerHeight);
             document.getElementById('main').style.height = window.innerHeight +'px';
 	    console.log("2. document.getElementById('main').style.height=>"+document.getElementById('main').style.height);
         }
         autoResizeDiv();
 
+
+
 	</script>
+	    <script type="text/javascript" src="swipe_refresh.js">
+		var element = $('body');
+
+		Hammer(element).on("swipeleft", function() {
+		    location.reload();
+		});
+	   </script>
 </html>
