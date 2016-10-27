@@ -2,6 +2,7 @@
   <head>
 
     <meta charset="UTF-8"/>
+    <meta http-equiv="refresh" content="5" />
     <link rel="stylesheet" type="text/css" href="reset.css" />
     <link rel="stylesheet" type="text/css" href="style.css" />
 
@@ -143,7 +144,8 @@
             console.log("1. document.getElementById('main').style.height=>"+document.getElementById('main').style.height);
  	    console.log("document.getElementById('mybody').style.height=>"+document.getElementById('mybody').style.height);
 	    console.log("window.innerHeight=>"+window.innerHeight);
-            document.getElementById('main').style.height = window.innerHeight +'px';
+            console.log("window.innerWidth=>"+window.innerWidth);
+            //document.getElementById('main').style.height = window.innerHeight +'px';
 	    console.log("2. document.getElementById('main').style.height=>"+document.getElementById('main').style.height);
         }
         autoResizeDiv();
@@ -152,7 +154,7 @@
 
 	</script>
 	    <script type="text/javascript" src="swipe_refresh.js">
-		var element = $('body');
+		var element = $('mybody');
 
 		Hammer(element).on("swipeleft", function() {
 		    location.reload();
