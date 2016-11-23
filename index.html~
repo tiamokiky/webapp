@@ -147,7 +147,7 @@ max-height:95%;" onclick="window.JSInterface.onStartApp('{id:qocaiOPbE8xLPuz,pro
 		document.getElementById('main').style.width = w +'px';
 		var b_h=(Number(h)*240)/(240+335);
 		var c_h=(Number(h)*335)/(240+335);
-		var c_w=(Number(w)/2; //picture ratio
+		var c_w=(Number(w)/2;
              	
 	        document.getElementById('ba').style.height = b_h +'px';
 		document.getElementById('cl').style.height = c_h +'px';
