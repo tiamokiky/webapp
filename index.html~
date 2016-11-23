@@ -145,7 +145,7 @@
 		document.getElementById('main').style.height = h +'px';
 		document.getElementById('main').style.width = w +'px';
 		var c_h=(Number(h)*335)/(240+335);
-		var c_w=(Number(c_h)*640)/335;
+		var c_w=(Number(c_h)*502)/249; //picture ratio
 		document.getElementById('cl').style.height = c_h +'px';
 		document.getElementById('cl').style.width = c_w +'px';
 		document.getElementById('cr').style.height = c_h +'px';
