@@ -144,12 +144,12 @@
 		//console.log("setScreenSize=> h:"+h+",w:"+w);
 		document.getElementById('main').style.height = h +'px';
 		document.getElementById('main').style.width = w +'px';
-int c_h=(h*335)/(240+335);
-int c_w=(c_h*640)/335;
-document.getElementById('cl').style.height = c_h +'px';
-document.getElementById('cl').style.width = c_w +'px';
-document.getElementById('cr').style.height = c_h +'px';
-document.getElementById('cr').style.width = c_w +'px';
+		int c_h=(h*335)/(240+335);
+		int c_w=(c_h*640)/335;
+		document.getElementById('cl').style.height = c_h +'px';
+		document.getElementById('cl').style.width = c_w +'px';
+		document.getElementById('cr').style.height = c_h +'px';
+		document.getElementById('cr').style.width = c_w +'px';
  	    console.log("document.getElementById('main').style.height=>"+document.getElementById('main').style.height);
  	    console.log("document.getElementById('main').style.width=>"+document.getElementById('main').style.width);
 	    console.log("document.getElementById('cl').style.height=>"+document.getElementById('cl').style.height);
@@ -161,10 +161,11 @@ document.getElementById('cr').style.width = c_w +'px';
  	    console.log("document.getElementById('mybody').style.height=>"+document.getElementById('mybody').style.height);
 	    console.log("window.innerHeight=>"+window.innerHeight);
             console.log("window.innerWidth=>"+window.innerWidth);
+	    setScreenSize(window.innerHeight,window.innerWidth);
             document.getElementById('main').style.height = window.innerHeight +'px';
 	    console.log("2. document.getElementById('main').style.height=>"+document.getElementById('main').style.height);
         }	
-        autoResizeDiv();
+        //autoResizeDiv();
         //setScreenSize('555','1322');
 
 	</script>
